@@ -25,10 +25,6 @@ if model_type == "distilbert":
 elif model_type == "roberta":
     model_name = "deepset/roberta-base-squad2"
 
-elif model_type == "electra-small":
-    model_type = "electra"
-    model_name = "google_electra_small"
-
 elif model_type == "electra-base":
     model_type = "electra"
     model_name = "deepset/electra-base-squad2"
@@ -38,7 +34,6 @@ train_args = {
     "overwrite_output_dir": True,
     "use_cached_eval_features": True,
     "output_dir": f"../models/{model_type}",
-    "best_model_dir": f"../models/{model_type}/best_model",
     "max_seq_length": 128,
     "num_train_epochs": 2,
     "wandb_project": "QuestionAnswering Model Comparison",
@@ -63,5 +58,5 @@ print("===Loaded Pre-trained DistilBert Model===")
 
 # fine-tuning 
 os.makedirs(f"../models/{model_type}", exist_ok=True)
-model.train_model(train_data=train_data)
+model.train_model(train_data=train_data, args=train_args)
 print("===Trained the DistilBert Model and saved fine-tuned model===")

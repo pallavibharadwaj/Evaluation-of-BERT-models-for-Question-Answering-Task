@@ -25,16 +25,11 @@ elif model_type == "electra-base":
     model_type = "electra"
     model_name = "google/electra-base-discriminator"
 
-elif model_type == "electra-small":
-    model_type = "electra"
-    model_name = "google/electra-small-discriminator"
-
 train_args = {
     "reprocess_input_data": False,
     "overwrite_output_dir": True,
     "use_cached_eval_features": True,
     "output_dir": f"../models/{model_type}",
-    "best_model_dir": f"../models/{model_type}/best_model",
     "max_seq_length": 128,
     "num_train_epochs": 2,
     "wandb_project": "QuestionAnswering Model Comparison",
@@ -51,7 +46,7 @@ train_args = {
 
 # load the trained model
 model = QuestionAnsweringModel(model_type=model_type, 
-                               model_name=f"../models/{model_type}", 
+                               model_name=f"../models/{model_type}/",
                                args=train_args, 
                                use_cuda=True)
 print("===Loaded fine-tuned model for predictions===")
