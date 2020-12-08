@@ -1,0 +1,42 @@
+2020-11-30 02:37:10,400 INFO    MainThread:3911 [wandb_setup.py:_flush():70] setting env: {}
+2020-11-30 02:37:10,400 INFO    MainThread:3911 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2020-11-30 02:37:10,400 INFO    MainThread:3911 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-11-30 02:37:10,400 INFO    MainThread:3911 [wandb_init.py:_log_setup():303] Logging user logs to /home/pallavi/git/course/nlpclass-1207-g-enigma/project/source/wandb/run-20201130_023710-w0zuqtvn/logs/debug.log
+2020-11-30 02:37:10,400 INFO    MainThread:3911 [wandb_init.py:_log_setup():304] Logging internal logs to /home/pallavi/git/course/nlpclass-1207-g-enigma/project/source/wandb/run-20201130_023710-w0zuqtvn/logs/debug-internal.log
+2020-11-30 02:37:12,021 INFO    MainThread:3911 [wandb_run.py:_console_start():1218] atexit reg
+2020-11-30 02:37:12,022 INFO    MainThread:3911 [wandb_run.py:_redirect():1085] redirect: SettingsConsole.REDIRECT
+2020-11-30 02:37:12,024 INFO    MainThread:3911 [wandb_run.py:_redirect():1088] Redirecting console.
+2020-11-30 02:37:12,024 INFO    MainThread:3911 [redirect.py:install():204] install start
+2020-11-30 02:37:12,024 INFO    MainThread:3911 [redirect.py:install():219] install stop
+2020-11-30 02:37:12,024 INFO    MainThread:3911 [redirect.py:install():204] install start
+2020-11-30 02:37:12,024 INFO    MainThread:3911 [redirect.py:install():219] install stop
+2020-11-30 02:37:12,025 INFO    MainThread:3911 [wandb_run.py:_redirect():1132] Redirects installed.
+2020-11-30 02:37:12,025 INFO    MainThread:3911 [wandb_watch.py:watch():35] Watching
+2020-11-30 02:50:09,373 INFO    MainThread:3911 [wandb_run.py:_atexit_cleanup():1188] got exitcode: 1
+2020-11-30 02:50:09,375 INFO    MainThread:3911 [wandb_run.py:_restore():1160] restore
+2020-11-30 02:50:09,375 INFO    MainThread:3911 [redirect.py:uninstall():223] uninstall start
+2020-11-30 02:50:09,375 INFO    MainThread:3911 [redirect.py:_stop():278] _stop: stdout
+2020-11-30 02:50:09,376 INFO    MainThread:3911 [redirect.py:_stop():284] _stop closed: stdout
+2020-11-30 02:50:09,376 INFO    stdout    :3911 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2020-11-30 02:50:09,376 INFO    stdout    :3911 [redirect.py:_pipe_relay():136] relay done done: stdout
+2020-11-30 02:50:09,376 INFO    MainThread:3911 [redirect.py:_stop():290] _stop joined: stdout
+2020-11-30 02:50:09,376 INFO    MainThread:3911 [redirect.py:_stop():292] _stop rd closed: stdout
+2020-11-30 02:50:09,376 INFO    MainThread:3911 [redirect.py:uninstall():227] uninstall done
+2020-11-30 02:50:09,376 INFO    MainThread:3911 [redirect.py:uninstall():223] uninstall start
+2020-11-30 02:50:09,377 INFO    MainThread:3911 [redirect.py:_stop():278] _stop: stderr
+2020-11-30 02:50:09,377 INFO    MainThread:3911 [redirect.py:_stop():284] _stop closed: stderr
+2020-11-30 02:50:09,379 INFO    MainThread:3911 [redirect.py:_stop():290] _stop joined: stderr
+2020-11-30 02:50:09,379 INFO    MainThread:3911 [redirect.py:_stop():292] _stop rd closed: stderr
+2020-11-30 02:50:09,379 INFO    MainThread:3911 [redirect.py:uninstall():227] uninstall done
+2020-11-30 02:50:09,379 INFO    MainThread:3911 [wandb_run.py:_restore():1160] restore
+2020-11-30 02:50:16,147 ERROR   MainThread:3911 [wandb_run.py:_atexit_cleanup():1206] Problem finishing run
+Traceback (most recent call last):
+  File "/home/pallavi/anaconda3/envs/venv/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1196, in _atexit_cleanup
+    self._on_finish()
+  File "/home/pallavi/anaconda3/envs/venv/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1325, in _on_finish
+    self._console_stop()  # TODO: there's a race here with jupyter console logging
+  File "/home/pallavi/anaconda3/envs/venv/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1234, in _console_stop
+    self._output_writer.close()
+  File "/home/pallavi/anaconda3/envs/venv/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1812, in close
+    self.f.close()
+OSError: [Errno 28] No space left on device

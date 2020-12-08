@@ -1,0 +1,14 @@
+2020-12-03 00:14:36,624 INFO    MainThread:14172 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-03 00:14:36,624 INFO    MainThread:14172 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2020-12-03 00:14:36,624 INFO    MainThread:14172 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-03 00:14:36,624 INFO    MainThread:14172 [wandb_init.py:_log_setup():303] Logging user logs to /home/pallavi/git/course/nlpclass-1207-g-enigma/project/source/wandb/run-20201203_001436-3fe8tash/logs/debug.log
+2020-12-03 00:14:36,624 INFO    MainThread:14172 [wandb_init.py:_log_setup():304] Logging internal logs to /home/pallavi/git/course/nlpclass-1207-g-enigma/project/source/wandb/run-20201203_001436-3fe8tash/logs/debug-internal.log
+2020-12-03 00:14:43,577 INFO    MainThread:14172 [wandb_run.py:_console_start():1218] atexit reg
+2020-12-03 00:14:43,577 INFO    MainThread:14172 [wandb_run.py:_redirect():1085] redirect: SettingsConsole.REDIRECT
+2020-12-03 00:14:43,578 INFO    MainThread:14172 [wandb_run.py:_redirect():1088] Redirecting console.
+2020-12-03 00:14:43,578 INFO    MainThread:14172 [redirect.py:install():204] install start
+2020-12-03 00:14:43,579 INFO    MainThread:14172 [redirect.py:install():219] install stop
+2020-12-03 00:14:43,579 INFO    MainThread:14172 [redirect.py:install():204] install start
+2020-12-03 00:14:43,579 INFO    MainThread:14172 [redirect.py:install():219] install stop
+2020-12-03 00:14:43,579 INFO    MainThread:14172 [wandb_run.py:_redirect():1132] Redirects installed.
+2020-12-03 00:14:43,579 INFO    MainThread:14172 [wandb_watch.py:watch():35] Watching

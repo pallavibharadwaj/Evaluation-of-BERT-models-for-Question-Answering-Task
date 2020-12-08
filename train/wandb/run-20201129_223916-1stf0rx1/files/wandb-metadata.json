@@ -1,0 +1,26 @@
+{
+    "os": "Linux-4.15.0-123-generic-x86_64-with-debian-stretch-sid",
+    "python": "3.6.12",
+    "heartbeatAt": "2020-11-29T17:09:18.309905",
+    "startedAt": "2020-11-29T17:09:16.667030",
+    "docker": null,
+    "gpu": "GeForce GTX 1060 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": "10.1.243",
+    "args": [
+        "electra-small"
+    ],
+    "state": "running",
+    "codePath": "project/source/train.py",
+    "program": "train.py",
+    "git": {
+        "remote": "https://csil-git1.cs.surrey.sfu.ca/pallavib/nlpclass-1207-g-enigma.git",
+        "commit": "9d7d9e6276cadb81893e78f776ce8d0032f762d5"
+    },
+    "email": "pallavib@sfu.ca",
+    "root": "/home/pallavi/git/course/nlpclass-1207-g-enigma",
+    "host": "hobbes",
+    "username": "pallavi",
+    "executable": "/home/pallavi/anaconda3/envs/venv/bin/python"
+}
