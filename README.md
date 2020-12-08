@@ -19,8 +19,8 @@
 
 There are two ways of using this repository depending on the needs of the user:
 
-I. [Evaluation of BERT Models] (#Evaluation-of-BERT-models) \
-II. [Web Application for Question Answering] (#Web-Application-for-Question-Answering)
+I. [Evaluation of BERT Models](#Evaluation-of-BERT-models) \
+II. [Web Application for Question Answering](#Web-Application-for-Question-Answering)
  
 ###  I.  Evaluation of BERT models
 
@@ -99,17 +99,15 @@ Relative Runtimes                                                | Relative GPU 
 
  # II. Web Application for Question Answering
 
-You will only need the the `web_application` folder in the repository to use the web application.
-
-You will need to download our best performing model - roberta, from the Vault link above into the `models` folder into `web_application`.
+In order to run the web application, make sure that our best performing model, roberta, is present in the `./models` folder at the top-level of the project repository.
 
 The folder structure should look like the following:
 ```
+└── models
+     └── roberta
 ├── web_application 
      └── app.py
      └── app.test.py
-     └── models
-           └── roberta
      └── static
            └── css
            └── js

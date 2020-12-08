@@ -28,7 +28,7 @@ def get_data():
 
 		model_type = "roberta"
 		model = QuestionAnsweringModel(model_type=model_type, 
-                               model_name=f"models/{model_type}/", use_cuda = False)
+                               model_name=f"../models/{model_type}/", use_cuda = False)
 
 		preds, _ = model.predict(to_predict)
 
